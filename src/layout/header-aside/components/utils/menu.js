@@ -10,7 +10,7 @@ export function elMenuItem (h, menu) {
     ...menu.iconSvg ? [
       h('d2-icon-svg', { props: { name: menu.iconSvg } })
     ] : [],
-    h('span', { slot: 'title' }, menu.title || '未命名菜单')
+    h('span', { slot: 'title' }, menu.title || menu.name || '未命名菜单')
   ])
 }
 

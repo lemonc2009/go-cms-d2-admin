@@ -20,9 +20,18 @@
           <el-tab-pane
             v-for="page in opened"
             :key="page.fullPath"
-            :label="page.meta.title || '未命名'"
+            :label="'未命名'"
             :name="page.fullPath"
             :closable="isTabClosable(page)"/>
+          <!--
+TODO 2022-03-23 HY 此处有个莫名BUG
+          <el-tab-pane
+            v-for="page in opened"
+            :key="page.fullPath"
+            :label="page.meta.title  || '未命名'"
+            :name="page.fullPath"
+            :closable="isTabClosable(page)"/>
+          -->
         </el-tabs>
       </div>
     </div>

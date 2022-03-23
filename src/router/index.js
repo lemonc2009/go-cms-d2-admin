@@ -7,6 +7,9 @@ import store from '@/store'
 import api from '@/api'
 import layoutHeaderAside from '@/layout/header-aside'
 
+// 路由数据
+import routes from './routes'
+
 // fix vue-router NavigationDuplicated
 const VueRouterPush = VueRouter.prototype.push
 VueRouter.prototype.push = function push (location) {
@@ -21,9 +24,9 @@ Vue.use(VueRouter)
 
 /**
  * @description 创建在 layout 中显示的路由设置
- * @param {Array} routes 动态路由设置
+ * @param {Array} routesLocal 动态路由设置
  */
-export function createRoutesInLayout (routes = []) {
+export function createRoutesInLayout (routesLocal = []) {
   return [
     {
       path: '/',
@@ -32,9 +35,10 @@ export function createRoutesInLayout (routes = []) {
       children: [
         { path: 'index', name: 'index', meta: { title: '首页', auth: true }, component: utils.import('system/index') },
         { path: 'log', name: 'log', meta: { title: '前端日志', auth: true }, component: utils.import('system/log') },
-        ...routes
+        ...routesLocal,
       ]
-    }
+    },
+    // ...routes
   ]
 }
 
@@ -51,10 +55,11 @@ export const constantRoutes = createRoutesInLayout().concat(routesOutLayout)
 
 /**
  * @description 创建路由
- * @param {Array} routes 路由设置
+ * @param {Array} routesLocal 路由设置
  */
-const createRouter = (routes = []) => new VueRouter({
+const createRouter = (routesLocal = []) => new VueRouter({
   scrollBehavior: () => ({ y: 0 }),
+  routesLocal,
   routes
 })
 
@@ -63,10 +68,10 @@ const router = createRouter(constantRoutes)
 
 /**
  * @description 重新设置路由
- * @param {Array} routes 额外追加的路由
+ * @param {Array} routesLocal 额外追加的路由
  */
-export function resetRouter (routes = []) {
-  router.matcher = createRouter(routes).matcher
+export function resetRouter (routesLocal = []) {
+  router.matcher = createRouter(routesLocal).matcher
 }
 
 router.beforeEach(async (to, from, next) => {

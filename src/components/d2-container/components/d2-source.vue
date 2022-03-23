@@ -52,7 +52,7 @@ export default {
   $paddingLR: 15px;
   $paddingTB: 7px;
   $fontSize: 12px;
-  $rightOuter: $paddingLR / 2;
+  $rightOuter: calc($paddingLR / 2);
   opacity: 0;
   position: fixed;
   z-index: 9999;
@@ -63,7 +63,7 @@ export default {
   font-weight: bold;
   border-radius: $borderRadius;
   padding: $paddingTB $paddingLR;
-  padding-right: $borderRadius + $paddingLR;
+  padding-right: calc($borderRadius + $paddingLR);
   background-color: rgba(#000, .7);
   border: 1px solid #000;
   color: #FFF;
