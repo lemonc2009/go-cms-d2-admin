@@ -24,7 +24,7 @@
 import { cloneDeep } from 'lodash'
 import { mapState, mapMutations } from 'vuex'
 import { frameInRoutes } from '@/router/routes'
-import layoutHeaderAside from '@/layout/header-aside'
+// import layoutHeaderAside from '@/layout/header-aside'
 export default {
   data () {
     return {
@@ -59,8 +59,8 @@ export default {
       // https://github.com/vuejs/vue-router/issues/2280
       // 所以暂时先不做对路由已经存在的判断
 
-      //TODO 2022-03-22 HY 有bug 
-      //const route = [
+      // TODO 2022-03-22 HY 有bug
+      // const route = [
       //   {
       //     path: '/demo/playground',
       //    component: layoutHeaderAside,
@@ -74,8 +74,8 @@ export default {
       //       }
       //     }
       //   ]
-      // }
-      //]
+      //  }
+      // ]
       const route = []
 
       this.$router.addRoutes(route)

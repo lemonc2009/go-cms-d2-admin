@@ -117,7 +117,7 @@ export default context => {
           routes.push(route)
         } catch (error) {
           utils.log.capsule('菜单', '文件不存在', 'danger')
-          utils.log.danger(err.message)
+          utils.log.danger(error.message)
         }
       }
       return routes

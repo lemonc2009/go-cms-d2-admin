@@ -34,7 +34,7 @@ export default {
   name: 'index-tab-permission',
   data () {
     return {
-      value:`<p>
+      value: `<p>
 <a href="https://github.com/d2-projects/d2-admin" target="_blank" class="ql-size-large" style="color: rgb(65, 184, 131);"><strong>D2 Admin</strong></a>
 <strong style="color: rgb(65, 184, 131);"></strong>
 by
