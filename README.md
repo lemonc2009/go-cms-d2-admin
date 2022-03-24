@@ -1,14 +1,14 @@
 基于 [D2Admin v1.7.2](https://github.com/d2-projects/d2-admin) 开发的 golang cms 管理后台，实现了 **动态菜单**、**动态路由**、**权限控制**、**多环境切换** 等功能。
 
-请配合服务端 [xiya-team/go-cms](https://github.com/xiya-team/go-cms) 使用。
+请配合服务端 [lemonc2009/go-cms-backend](https://github.com/lemonc2009/go-cms-backend) 使用。
 
-> 只包含系统设置功能，未实现 cms 常见的内容管理，因对应的服务端仓库为 `xiya-team/go-cms` 遂本仓库取名 `d2-admin-xiya-go-cms`
+> 只包含系统设置功能，未实现 cms 常见的内容管理，因对应的服务端仓库为 `lemonc2009/go-cms-backend`，本仓库取名 `go-cms-d2-admin` （原名`d2-admin-xiya-go-cms` ）
 
 > 已追加完整版 [v1.8.0](https://github.com/d2-projects/d2-admin/releases/tag/1.8.0) | [v1.8.2](https://github.com/d2-projects/d2-admin/releases/tag/v1.8.2) | [v1.8.3](https://github.com/d2-projects/d2-admin/releases/tag/v1.8.3) | [v1.8.4](https://github.com/d2-projects/d2-admin/releases/tag/v1.8.4) | [v1.8.5](https://github.com/d2-projects/d2-admin/releases/tag/v1.8.5) | [v1.9.0](https://github.com/d2-projects/d2-admin/releases/tag/v1.9.0) | [v1.9.1](https://github.com/d2-projects/d2-admin/releases/tag/v1.9.1) | [v1.9.2](https://github.com/d2-projects/d2-admin/releases/tag/v1.9.2) | [v1.10.0](https://github.com/d2-projects/d2-admin/releases/tag/v1.10.0)更新内容
 
 > 本工程的增删改查型页面使用了大量的 jsx 语法糖，非传统 template 写法，如果你（项目同事、领导）无法接受 jsx in vue，请直接关闭
 
-## 文档
+## 文档 [感觉没有太大参考意义了，原作者看起来已经弃坑]
 
 [在 https://d2.pub 上的本项目文档](https://d2.pub/zh/doc/d2-admin-xiya-go-cms/)
 
@@ -18,7 +18,7 @@
 
 您可以使用下面的账号登录：
 
-用户名 `admin` 密码 `admin@xiya.vip`
+用户名 `admin` 密码 `admin@xiya.vip`  【为了保持对作者的敬意，此处我没有调整】
 
 ## 预览
 
@@ -26,13 +26,10 @@
 
 | 位置 | 链接 | 部署位置 | 构建状态 |
 | --- | --- | --- | --- |
-| d2.pub | [preview](https://d2.pub/d2-admin-xiya-go-cms/preview) | 中国服务器 | [![](https://github.com/d2-projects/d2-admin-xiya-go-cms/workflows/Deploy%20https%3A%2F%2Fd2.pub/badge.svg)](https://github.com/d2-projects/d2-admin-xiya-go-cms/actions?query=workflow%3A%22Deploy+https%3A%2F%2Fd2.pub%22) |
-| cdn.d2.pub | [preview](https://cdn.d2.pub/d2-admin-xiya-go-cms/preview) | 七牛云 CDN | [![](https://github.com/d2-projects/d2-admin-xiya-go-cms/workflows/Deploy%20https%3A%2F%2Fcdn.d2.pub/badge.svg)](https://github.com/d2-projects/d2-admin-xiya-go-cms/actions?query=workflow%3A%22Deploy+https%3A%2F%2Fcdn.d2.pub%22) |
-| github | [preview](https://d2-projects.github.io/d2-admin-xiya-go-cms) | GitHub pages | [![](https://github.com/d2-projects/d2-admin-xiya-go-cms/workflows/Deploy%20Github/badge.svg)](https://github.com/d2-projects/d2-admin-xiya-go-cms/actions?query=workflow%3A%22Deploy+Github%22) |
-| netlify | [preview](https://d2-admin-xiya-go-cms.netlify.com) | Netlify CDN | [![Netlify Status](https://api.netlify.com/api/v1/badges/8fea8718-2196-45de-bbb8-436c3f4da408/deploy-status)](https://app.netlify.com/sites/d2-admin-xiya-go-cms/deploys) |
+无
 
 ## 其它同步仓库
 
 | 位置 | 链接 |
 | --- | --- |
-| 码云 | [https://gitee.com/d2-projects/d2-admin-xiya-go-cms](https://gitee.com/d2-projects/d2-admin-xiya-go-cms) |
+无
